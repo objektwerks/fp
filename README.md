@@ -8,4 +8,4 @@ Test
 
 Resources
 ---------
-1. [FP in Scala](https://www.manning.com/books/functional-programming-in-scala-second-edition?manning_source=marketplace&manning_medium=search-result-shallow&manning_term=scala)
+* [FP in Scala](https://www.manning.com/books/functional-programming-in-scala-second-edition?manning_source=marketplace&manning_medium=search-result-shallow&manning_term=scala)
