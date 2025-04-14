@@ -1,6 +1,6 @@
-FP
---
->FP using Scala 3.
+Fastparse
+---------
+>Fastparse feature tests using Scala 3.
 
 Test
 ----
@@ -8,4 +8,4 @@ Test
 
 Resources
 ---------
-* [FP in Scala](https://www.manning.com/books/functional-programming-in-scala-second-edition?manning_source=marketplace&manning_medium=search-result-shallow&manning_term=scala)
+* [Fastparse Docs](https://com-lihaoyi.github.io/fastparse/)
