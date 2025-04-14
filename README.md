@@ -9,3 +9,4 @@ Test
 Resources
 ---------
 * [Fastparse Docs](https://com-lihaoyi.github.io/fastparse/)
+* [Fastparse Github](https://github.com/com-lihaoyi/fastparse)
