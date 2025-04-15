@@ -7,4 +7,4 @@ final class ParserTest extends AnyFunSuite with Matchers:
   test("parser"):
     import Parser.calc
 
-    calc("1+1") shouldBe 2
+    calc("1+1") shouldBe "2"

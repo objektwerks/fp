@@ -4,7 +4,10 @@ import fastparse.*
 import NoWhitespace.*
 
 object Parser:
-  def calc(expression: String) = parse(expression, expr(_))
+  def calc(expression: String): String =
+    parse(expression, expr(_)) match
+      case Parsed.Success(value, index) => value
+      case Parsed.Failure(label, index, extra) => s"calc failed: ${extra.trace().longAggregateMsg}"
 
   def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
