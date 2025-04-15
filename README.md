@@ -23,5 +23,7 @@ Publish
 
 Resources
 ---------
+* [Scala Native Docs](http://www.scala-native.org/en/latest/index.html)
+* [Scala Native Intro Video](https://www.youtube.com/watch?v=u2CnE-sRdBw)
 * [Fastparse Docs](https://com-lihaoyi.github.io/fastparse/)
 * [Fastparse Github](https://github.com/com-lihaoyi/fastparse)
