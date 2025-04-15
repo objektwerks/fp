@@ -1,6 +1,6 @@
 Fastparse
 ---------
->Scala native calc app using Fastparse and Scala 3.
+>Scala native calc app using FastParse and Scala 3.
 
 Install
 -------
