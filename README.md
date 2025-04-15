@@ -21,6 +21,10 @@ Publish
 2. ```mv target/scala-3.7.0-RC2/todo-native-cli target/scala-3.7.0-RC2/todo```
 3. ```sudo cp target/scala-3.7.0-RC1/todo /usr/local/bin```
 
+Execute
+-------
+1. todo "1 + 2"
+
 Resources
 ---------
 * [Scala Native Docs](http://www.scala-native.org/en/latest/index.html)
