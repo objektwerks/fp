@@ -1,3 +1,5 @@
 package objektwerks
 
-@main def calc(expression: String): Unit = ???
+@main def calc(args: String*): Unit =
+  val expression = args.mkString(" ")
+  println(expression)
