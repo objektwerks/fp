@@ -6,8 +6,8 @@ import NoWhitespace.*
 object Parser:
   def calc(expression: String): String =
     parse(expression, expr(_)) match
-      case Parsed.Success(value, index) => value
-      case Parsed.Failure(label, index, extra) => s"calc failed: ${extra.trace().longAggregateMsg}"
+      case Parsed.Success[Int](value, index) => value.toString
+      case Parsed.Failure(label, index, extra) => s"parser failed: ${extra.trace().longAggregateMsg}"
 
   private def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
