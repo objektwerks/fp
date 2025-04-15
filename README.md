@@ -6,18 +6,6 @@ Calc
 
 >This just might be the ***the mother of all opaque*** Scala libraries.;)
 
-Warning
--------
->**All** calc app expressions **must**:
-1. contain zero spaces; and
-2. be enclosed in double quotes!
->For instance: ```calc "1+1"``` yields:
-```
-➜  calc git:(main) calc "1+1"                                                
-Expression: 1+1
-Result: 2
-```
-
 Install
 -------
 >See: http://www.scala-native.org/en/latest/user/setup.html
@@ -36,6 +24,18 @@ Publish
 1. ```sbt clean test nativeLink```
 2. ```mv target/scala-3.7.0-RC2/calc target/scala-3.7.0-RC2/calc```
 3. ```sudo cp target/scala-3.7.0-RC2/calc /usr/local/bin```
+
+Warning
+-------
+>**All** calc app expressions **must**:
+1. contain zero spaces; and
+2. be enclosed in double quotes!
+>For instance: ```calc "1+1"``` yields:
+```
+➜  calc git:(main) calc "1+1"                                                
+Expression: 1+1
+Result: 2
+```
 
 Execute
 -------
