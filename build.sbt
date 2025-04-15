@@ -1,3 +1,7 @@
+import scalanative.build.Mode
+
+enablePlugins(ScalaNativePlugin)
+
 name := "fastparse"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
@@ -11,3 +15,6 @@ libraryDependencies ++= {
 scalacOptions ++= Seq(
   "-Wunused:all"
 )
+nativeConfig ~= {
+  _.withMode(Mode.releaseFast)
+}
