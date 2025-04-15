@@ -4,13 +4,13 @@ import fastparse.*
 import NoWhitespace.*
 
 class Parser:
-  def eval(tree: (Int, Seq[(String, Int)])) = {
+  def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
-    ops.foldLeft(base){ case (left, (op, right)) => op match{
-      case "+" => left + right case "-" => left - right
-      case "*" => left * right case "/" => left / right
-    }}
-  }
+    ops.foldLeft(base) { case (left, (op, right)) =>
+      op match
+        case "+" => left + right case "-" => left - right
+        case "*" => left * right case "/" => left / right
+    }
 
   def number[$: P]: P[Int] = P( CharIn("0-9").rep(1).!.map(_.toInt) )
 
