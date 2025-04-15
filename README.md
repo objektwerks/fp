@@ -23,7 +23,7 @@ Publish
 
 Execute
 -------
-1. calc 1 + 2
+1. ```calc 1 + 2```
 
 Resources
 ---------
