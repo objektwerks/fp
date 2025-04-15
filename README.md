@@ -4,7 +4,7 @@ Calc
 
 Error
 -----
->Attempting to work thru this error:
+>Attempting to resolve this error:
 ```
 No given instance of type fastparse.ParsingRun[$] was found for a context parameter of method expr in object Parser
 where:    $ is a type variable
