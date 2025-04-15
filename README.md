@@ -4,7 +4,7 @@ Calc
 
 Warning
 -------
->**All** expressions must:
+>**All** expressions **must**:
 1. contain zero spaces; and
 2. be enclosed in double quotes!
 
