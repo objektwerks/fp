@@ -4,8 +4,9 @@ Calc
 
 Warning
 -------
->Any expression that contains ```parens``` must be enclosed in double quotes,
->at least on macOs. Simple math expressions, without parens, work fine.
+>Any expression that contains ```parens``` must be enclosed in double quotes.
+
+>Simple math expressions, without parens, typically work. But not always.
 
 Install
 -------
