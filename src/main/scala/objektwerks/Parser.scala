@@ -8,7 +8,7 @@ object Parser:
       case Parsed.Success[Int](value, _) => value.toString
       case Parsed.Failure(_, _, extra) => s"*** Parser failed: ${extra.trace().longAggregateMsg}"
 
-  private def calc(tree: (Int, Seq[(String, Int)])) =
+  private def calc(tree: (Int, Seq[(String, Int)])): Int =
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
       op match
