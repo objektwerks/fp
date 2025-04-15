@@ -7,7 +7,7 @@ Error
 >Attempting to resolve this error:
 ```
 No given instance of type fastparse.ParsingRun[$] was found for a context parameter of method expr in object Parser
-where:    $ is a type variable
+where: $ is a type variable
 ```
 >See ```Parser.calc``` for details.
 
