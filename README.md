@@ -2,6 +2,11 @@ Calc
 ----
 >Scala native calc app using FastParse and Scala 3.
 
+Warning
+-------
+>Any expression that contains ```parens``` must be enclosed in double quotes,
+>at least on macOs. Simple math expressions, without parens, work fine.
+
 Install
 -------
 >See: http://www.scala-native.org/en/latest/user/setup.html
