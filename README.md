@@ -2,15 +2,6 @@ Calc
 ----
 >Scala native calc app using FastParse and Scala 3.
 
-Error
------
->Attempting to resolve this error:
-```
-No given instance of type fastparse.ParsingRun[$] was found for a context parameter of method expr in object Parser
-where: $ is a type variable
-```
->See ```Parser.calc``` for details.
-
 Install
 -------
 >See: http://www.scala-native.org/en/latest/user/setup.html
