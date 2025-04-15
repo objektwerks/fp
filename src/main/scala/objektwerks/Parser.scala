@@ -14,7 +14,13 @@ class Parser:
         case "-" => left - right
     }
 
-  def number[$: P]: P[Int] = P( CharIn("0-9").rep(1).!.map(_.toInt) )
+  def number[$: P]: P[Int] =
+    P(
+      CharIn("0-9")
+        .rep(1)
+        .!
+        .map(_.toInt)
+    )
 
   def parens[$: P]: P[Int] = P( "(" ~/ addSubtract ~ ")" )
 
