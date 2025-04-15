@@ -5,8 +5,8 @@ Calc
 Warning
 -------
 >**All** expressions must:
-1. contain zero spaces
-2. be enclosed in double quotes
+1. contain zero spaces; and
+2. be enclosed in double quotes!
 
 Install
 -------
