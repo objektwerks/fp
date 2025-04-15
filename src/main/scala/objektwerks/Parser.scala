@@ -5,7 +5,7 @@ import NoWhitespace.*
 
 object Parser:
   def calc(expression: String): String =
-    parse(expression, expr(_)) match
+    parse[Int](expression, expr(_)) match
       case Parsed.Success[Int](value, index) => value.toString
       case Parsed.Failure(label, index, extra) => s"parser failed: ${extra.trace().longAggregateMsg}"
 
