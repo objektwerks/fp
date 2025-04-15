@@ -5,7 +5,7 @@ Calc
 Install
 -------
 >See: http://www.scala-native.org/en/latest/user/setup.html
-1. brew install llvm
+1. ```brew install llvm```
 
 Build
 -----
