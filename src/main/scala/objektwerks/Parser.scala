@@ -3,7 +3,7 @@ package objektwerks
 import fastparse.* 
 import NoWhitespace.*
 
-class Parser:
+object Parser:
   def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
