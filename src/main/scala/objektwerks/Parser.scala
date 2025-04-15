@@ -9,7 +9,7 @@ object Parser:
       case Parsed.Success(value, index) => value
       case Parsed.Failure(label, index, extra) => s"calc failed: ${extra.trace().longAggregateMsg}"
 
-  def eval(tree: (Int, Seq[(String, Int)])) =
+  private def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
       op match
@@ -19,7 +19,7 @@ object Parser:
         case "-" => left - right
     }
 
-  def number[$: P]: P[Int] =
+  private def number[$: P]: P[Int] =
     P(
       CharIn("0-9")
         .rep(1)
@@ -27,27 +27,27 @@ object Parser:
         .map(_.toInt)
     )
 
-  def parens[$: P]: P[Int] =
+  private def parens[$: P]: P[Int] =
     P(
       "(" ~/ addSubtract ~ ")"
     )
 
-  def factor[$: P]: P[Int] =
+  private def factor[$: P]: P[Int] =
     P(
       number | parens
     )
 
-  def divideMultiply[$: P]: P[Int] =
+  private def divideMultiply[$: P]: P[Int] =
     P(
       factor ~ ( CharIn("*/").! ~/ factor ).rep
     ).map(eval)
 
-  def addSubtract[$: P]: P[Int] =
+  private def addSubtract[$: P]: P[Int] =
     P(
       divideMultiply ~ ( CharIn("+\\-").! ~/ divideMultiply ).rep
     ).map(eval)
 
-  def expr[$: P]: P[Int] =
+  private def expr[$: P]: P[Int] =
     P(
       addSubtract ~ End
     )
