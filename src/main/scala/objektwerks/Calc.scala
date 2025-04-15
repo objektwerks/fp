@@ -2,7 +2,7 @@ package objektwerks
 
 @main def calc(args: String*): Unit =
   val expression = args.mkString
-  println(expression)
+  println(s"Expression: $expression")
   println(
-    Parser.parseAndCalc(expression)
+    s"Result: ${Parser.parseAndCalc(expression)}"
   )
