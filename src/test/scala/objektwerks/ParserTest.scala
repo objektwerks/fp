@@ -11,3 +11,5 @@ final class ParserTest extends AnyFunSuite with Matchers:
     parseAndCalc("2-1") shouldBe "1"
     parseAndCalc("(1+1*2)+3*4") shouldBe "15"
     parseAndCalc("((1+1*2)+(3*4*5))/3") shouldBe "21"
+
+    parseAndCalc("1+1*").startsWith("*** Parser failed:") shouldBe true
