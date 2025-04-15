@@ -9,6 +9,7 @@ final class ParserTest extends AnyFunSuite with Matchers:
   test("success"):    
     parseAndCalc("1+1") shouldBe "2"
     parseAndCalc("2-1") shouldBe "1"
+    parseAndCalc("2*2") shouldBe "4"
     parseAndCalc("(1+1*2)+3*4") shouldBe "15"
     parseAndCalc("((1+1*2)+(3*4*5))/3") shouldBe "21"
 
