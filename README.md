@@ -4,9 +4,9 @@ Calc
 
 Warning
 -------
->Any expression that contains ```parens``` must be enclosed in double quotes.
-
->Simple math expressions, without parens, typically work. But not always.
+>**All** expressions must:
+1. contain zero spaces
+2. be enclosed in double quotes
 
 Install
 -------
@@ -29,7 +29,7 @@ Publish
 
 Execute
 -------
-1. ```calc 1 + 2```
+1. ```calc "1+2"```
 
 Resources
 ---------
