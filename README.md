@@ -8,7 +8,7 @@ Calc
 
 Warning
 -------
->**All** expressions **must**:
+>**All** calc app expressions **must**:
 1. contain zero spaces; and
 2. be enclosed in double quotes!
 >For instance: ```calc "1+1"``` yields:
