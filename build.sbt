@@ -4,7 +4,7 @@ enablePlugins(ScalaNativePlugin)
 
 name := "calc"
 organization := "objektwerks"
-version := "0.1"
+version := "0.2-SNAPSHOT"
 scalaVersion := "3.7.0-RC2"
 libraryDependencies ++= {
   Seq(
