@@ -8,8 +8,10 @@ class Parser:
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
       op match
-        case "+" => left + right case "-" => left - right
-        case "*" => left * right case "/" => left / right
+        case "*" => left * right
+        case "/" => left / right
+        case "+" => left + right
+        case "-" => left - right
     }
 
   def number[$: P]: P[Int] = P( CharIn("0-9").rep(1).!.map(_.toInt) )
