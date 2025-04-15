@@ -8,7 +8,7 @@ object Parser:
       case Parsed.Success[Int](value, _) => value.toString
       case Parsed.Failure(_, _, extra) => s"*** Parser failed: ${extra.trace().longAggregateMsg}"
 
-  private def eval(tree: (Int, Seq[(String, Int)])) =
+  private def calc(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
       op match
@@ -39,12 +39,12 @@ object Parser:
   private def divideMultiply[$: P]: P[Int] =
     P(
       factor ~ ( CharIn("*/").! ~/ factor ).rep
-    ).map(eval)
+    ).map(calc)
 
   private def addSubtract[$: P]: P[Int] =
     P(
       divideMultiply ~ ( CharIn("+\\-").! ~/ divideMultiply ).rep
-    ).map(eval)
+    ).map(calc)
 
   private def expr[$: P]: P[Int] =
     P(
