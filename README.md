@@ -2,7 +2,7 @@ Calc
 ----
 >Scala native calc app using FastParse and Scala 3.
 
->The code herein is derived from the FastParse docs.
+>The code herein is ***derived*** from the FastParse docs.
 
 >This just might be the ***the mother of all opaque*** Scala libraries.;)
 
