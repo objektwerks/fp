@@ -1,3 +1,3 @@
 package objektwerks
 
-object App
+object Calc
