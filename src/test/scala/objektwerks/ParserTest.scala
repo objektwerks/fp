@@ -7,7 +7,7 @@ import org.scalatest.matchers.should.Matchers
 
 final class ParserTest extends AnyFunSuite with Matchers:
   test("parser"):
-    import Parser.{given, *}
+    import Parser.*
 
     val Parsed.Success(2, _) = parse("1+1", expr(_))
     val Parsed.Success(15, _) = parse("(1+1*2)+3*4", expr(_))
