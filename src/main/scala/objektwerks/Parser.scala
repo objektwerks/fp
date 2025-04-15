@@ -22,7 +22,10 @@ class Parser:
         .map(_.toInt)
     )
 
-  def parens[$: P]: P[Int] = P( "(" ~/ addSubtract ~ ")" )
+  def parens[$: P]: P[Int] =
+    P(
+      "(" ~/ addSubtract ~ ")"
+    )
 
   def factor[$: P]: P[Int] = P( number | parens )
 
