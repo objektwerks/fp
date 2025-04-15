@@ -23,7 +23,7 @@ Publish
 
 Execute
 -------
-1. todo "1 + 2"
+1. todo 1 + 2
 
 Resources
 ---------
