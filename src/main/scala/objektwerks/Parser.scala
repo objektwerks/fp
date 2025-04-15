@@ -4,6 +4,8 @@ import fastparse.*
 import NoWhitespace.*
 
 object Parser:
+  def calc(expression: String) = parse(expression, expr(_))
+
   def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
     ops.foldLeft(base) { case (left, (op, right)) =>
