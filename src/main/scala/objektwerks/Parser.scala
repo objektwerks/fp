@@ -42,4 +42,7 @@ class Parser:
       divideMultiply ~ ( CharIn("+\\-").! ~/ divideMultiply ).rep
     ).map(eval)
 
-  def expr[$: P]: P[Int]   = P( addSubtract ~ End )
+  def expr[$: P]: P[Int] =
+    P(
+      addSubtract ~ End
+    )
