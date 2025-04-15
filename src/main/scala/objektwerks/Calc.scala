@@ -1,3 +1,3 @@
 package objektwerks
 
-object Calc
+@main def calc(expression: String): Unit = ???
