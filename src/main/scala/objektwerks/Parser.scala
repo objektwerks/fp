@@ -1,13 +1,12 @@
 package objektwerks
 
-import fastparse.* 
-import NoWhitespace.*
+import fastparse.*, NoWhitespace.*
 
 object Parser:
   def calc(expression: String): String =
-    parse[Int](expression, expr(_)) match
+    parse[Int](expression, p => { given P[?] = p; expr }) match
       case Parsed.Success[Int](value, index) => value.toString
-      case Parsed.Failure(label, index, extra) => s"parser failed: ${extra.trace().longAggregateMsg}"
+      case Parsed.Failure(_, _, extra) => s"parser failed: ${extra.trace().longAggregateMsg}"
 
   private def eval(tree: (Int, Seq[(String, Int)])) =
     val (base, ops) = tree
