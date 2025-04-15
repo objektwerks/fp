@@ -29,7 +29,12 @@ Publish
 
 Execute
 -------
-1. ```calc "1+2"```
+1. ```calc "1+1"```
+```
+➜  calc git:(main) calc "1+1"                                                
+Expression: 1+1
+Result: 2
+```
 
 Resources
 ---------
