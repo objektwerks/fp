@@ -32,7 +32,10 @@ class Parser:
       number | parens
     )
 
-  def divideMultiply[$: P]: P[Int] = P( factor ~ (CharIn("*/").! ~/ factor).rep ).map(eval)
+  def divideMultiply[$: P]: P[Int] =
+    P(
+      factor ~ ( CharIn("*/").! ~/ factor ).rep
+    ).map(eval)
 
   def addSubtract[$: P]: P[Int] = P( divideMultiply ~ (CharIn("+\\-").! ~/ divideMultiply).rep ).map(eval)
 
