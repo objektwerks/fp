@@ -17,6 +17,10 @@ Test
 ----
 1. ```sbt clean test```
 
+Run
+---
+1. sbt "run 1+1"
+
 Publish
 -------
 1. ```sbt clean test nativeLink```
