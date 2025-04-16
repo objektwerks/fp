@@ -28,8 +28,7 @@ Execute
 >**All** calc app expressions **must**:
 1. contain zero spaces; and
 2. be enclosed in double quotes!
-
->```calc "1+1"```
+>For instance, ```calc "1+1"``` yields:
 ```
 ➜  calc git:(main) calc "1+1"                                                
 Expression: 1+1
