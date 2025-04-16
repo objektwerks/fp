@@ -4,8 +4,6 @@ Calc
 
 >The code herein is ***derived*** from the FastParse docs.
 
->This just might be the ***the mother of all opaque*** Scala libraries.;)
-
 Install
 -------
 >See: http://www.scala-native.org/en/latest/user/setup.html
