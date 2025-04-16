@@ -23,15 +23,13 @@ Publish
 2. ```mv target/scala-3.7.0-RC2/calc target/scala-3.7.0-RC2/calc```
 3. ```sudo cp target/scala-3.7.0-RC2/calc /usr/local/bin```
 
-Instructions
-------------
+Execute
+-------
 >**All** calc app expressions **must**:
 1. contain zero spaces; and
 2. be enclosed in double quotes!
 
-Execute
--------
-1. ```calc "1+1"```
+>```calc "1+1"```
 ```
 ➜  calc git:(main) calc "1+1"                                                
 Expression: 1+1
