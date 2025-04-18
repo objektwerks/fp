@@ -29,13 +29,15 @@ Publish
 
 Execute
 -------
->Enclose all expressions in quotes ( long rant to follow ):
+>Enclose all expressions in double quotes(""):
 1. calc "1 + 2"
 ```
 ➜  calc git:(main) calc "1 + 2"                                                
 Expression: 1 + 2
 Result: 3
 ```
+>Some expressions will work without double quotes, and some won't.
+
 Resources
 ---------
 * [Scala Native Docs](http://www.scala-native.org/en/latest/index.html)
