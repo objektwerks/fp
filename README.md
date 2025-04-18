@@ -30,6 +30,7 @@ Publish
 Execute
 -------
 1. calc 1 + 2
+```
 ➜  calc git:(main) calc "1 + 2"                                                
 Expression: 1 + 2
 Result: 3
