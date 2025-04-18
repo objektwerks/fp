@@ -4,7 +4,10 @@ import fastparse.*, NoWhitespace.*
 
 object Parser:
   def parseAndCalc(expression: String): String =
-    parse[Int](expression, p => { given P[?] = p; expr }) match
+    val compressedExpression = expression.replace(" ", "")
+    println(s"Raw Expression: $expression")
+    println(s"Compressed Expression: $compressedExpression")
+    parse[Int](compressedExpression, p => { given P[?] = p; expr }) match
       case Parsed.Success[Int](value, _) => value.toString
       case Parsed.Failure(_, _, extra) => s"Parser failed: ${extra.trace().longAggregateMsg}"
 
