@@ -7,9 +7,11 @@ object Parser:
     println(s"Raw Expression: $expression")
     val compressedExpression = expression.replace(" ", "")
     println(s"Compressed Expression: $compressedExpression")
-    parse[Int](compressedExpression, p => { given P[?] = p; expr }) match
+    val result = parse[Int](compressedExpression, p => { given P[?] = p; expr }) match
       case Parsed.Success[Int](value, _) => value.toString
       case Parsed.Failure(_, _, extra) => s"Parser failed: ${extra.trace().longAggregateMsg}"
+    println(s"Result: $result")
+    result
 
   private def calc(tree: (Int, Seq[(String, Int)])): Int =
     val (base, ops) = tree
