@@ -5,7 +5,7 @@ enablePlugins(ScalaNativePlugin)
 name := "calc"
 organization := "objektwerks"
 version := "3.0.0"
-scalaVersion := "3.7.0-RC2"
+scalaVersion := "3.7.0-RC3"
 libraryDependencies ++= {
   Seq(
     "com.lihaoyi" %%% "fastparse" % "3.1.1",
