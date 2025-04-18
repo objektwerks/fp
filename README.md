@@ -19,7 +19,7 @@ Test
 
 Run
 ---
-1. sbt "run 1+1"
+1. sbt "run 1 + 2"
 
 Publish
 -------
@@ -29,17 +29,11 @@ Publish
 
 Execute
 -------
->**All** calc app expressions **must**:
-1. contain zero spaces; and
-2. be enclosed in double quotes!
->For instance, ```calc "1+1"``` yields:
+1. calc 1 + 2
+➜  calc git:(main) calc "1 + 2"                                                
+Expression: 1 + 2
+Result: 3
 ```
-➜  calc git:(main) calc "1+1"                                                
-Expression: 1+1
-Result: 2
-```
->**TODO**: Remove the above requirements 1 and 2!
-
 Resources
 ---------
 * [Scala Native Docs](http://www.scala-native.org/en/latest/index.html)
