@@ -37,7 +37,8 @@ Raw Expression: 1 + 1
 Compressed Expression: 1+1
 Result: 2
 ```
->Some expressions will work without double quotes, and some won't. :)
+>Some expressions will work without double quotes, and some won't.
+>Clearly, certain math symbols are handled differently on the command line.
 
 Examples
 --------
