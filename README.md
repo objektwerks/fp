@@ -29,7 +29,8 @@ Publish
 
 Execute
 -------
-1. calc 1 + 2
+>Enclose all expressions in quotes ( long rant to follow ):
+1. calc "1 + 2"
 ```
 ➜  calc git:(main) calc "1 + 2"                                                
 Expression: 1 + 2
