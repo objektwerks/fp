@@ -29,14 +29,44 @@ Publish
 
 Execute
 -------
->Enclose all expressions in double quotes(""):
-1. calc "1 + 2"
+>Enclose all expressions in double quotes("1 + 1"):
+1. calc "1 + 1"
 ```
-➜  calc git:(main) calc "1 + 2"                                                
-Expression: 1 + 2
-Result: 3
+➜  calc git:(main) calc "1 + 1"
+Raw Expression: 1 + 1
+Compressed Expression: 1+1
+Result: 2
 ```
->Some expressions will work without double quotes, and some won't.
+>Some expressions will work without double quotes, and some won't. :)
+
+Examples
+--------
+```
+➜  calc git:(main) calc "1 + 1"
+Raw Expression: 1 + 1
+Compressed Expression: 1+1
+Result: 2
+➜  calc git:(main) calc "2 - 1"
+Raw Expression: 2 - 1
+Compressed Expression: 2-1
+Result: 1
+➜  calc git:(main) calc "2 * 2"
+Raw Expression: 2 * 2
+Compressed Expression: 2*2
+Result: 4
+➜  calc git:(main) calc "4 / 2"
+Raw Expression: 4 / 2
+Compressed Expression: 4/2
+Result: 2
+➜  calc git:(main) calc "(1 + 1 * 2) + 3 * 4"
+Raw Expression: (1 + 1 * 2) + 3 * 4
+Compressed Expression: (1+1*2)+3*4
+Result: 15
+➜  calc git:(main) calc "((1 + 1 * 2) + (3 * 4 * 5)) / 3"
+Raw Expression: ((1 + 1 * 2) + (3 * 4 * 5)) / 3
+Compressed Expression: ((1+1*2)+(3*4*5))/3
+Result: 21
+```
 
 Resources
 ---------
