@@ -24,7 +24,7 @@ Run
 Publish
 -------
 1. ```sbt clean test nativeLink```
-2. ```mv target/scala-3.7.0-RC2/calc target/scala-3.7.0-RC3/calc```
+2. ```mv target/scala-3.7.0-RC3/calc target/scala-3.7.0-RC3/calc```
 3. ```sudo cp target/scala-3.7.0-RC3/calc /usr/local/bin```
 
 Execute
